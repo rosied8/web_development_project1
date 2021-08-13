@@ -74,19 +74,31 @@ header img {
 }
 /* footer */
 footer {
-  align-self: flex-end;
+  /* align-self: flex-end; */
   background-color: var(--primary-color);
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
 }
 .footer-logo {
-  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 1;
   width: 3rem;
   margin: 1rem;
 }
+.socials {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  text-align: center;
+}
+.socials p {
+  margin-top: 1rem;
+}
 .socials img {
   width: 2rem;
+  margin: 1rem;
 }
+/* The home page */
 .coffee-choices {
   display: flex;
   flex-direction: row;
@@ -179,6 +191,16 @@ footer {
   text-align: center;
   justify-content: space-around;
 }
+strong {
+  font-weight: bold;
+}
+.program-introduction h1 {
+  margin: 2rem;
+}
+.detail {
+  margin-top: 2rem;
+}
+
 /* for the about page */
 .about-section {
   display: flex;
