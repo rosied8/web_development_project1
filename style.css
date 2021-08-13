@@ -194,11 +194,14 @@ footer {
 strong {
   font-weight: bold;
 }
-.program-introduction h1 {
-  margin: 2rem;
-}
 .detail {
   margin-top: 2rem;
+}
+
+.reminder {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: large;
 }
 
 /* for the about page */
