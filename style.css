@@ -111,6 +111,7 @@ footer {
 /* section part --- */
 .main-section {
   text-align: center;
+  margin: 2rem 0;
   /* padding: 2rem; */
 }
 .main-section button {
@@ -163,7 +164,7 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  border: 1rem red solid;
+  /* border: 1rem red solid; */
 }
 .open-intro {
   display: flex;
@@ -198,6 +199,13 @@ strong {
   margin-top: 2rem;
 }
 
+.intro p {
+  font-size: large;
+}
+section p {
+  font-size: large;
+}
+
 .reminder {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -209,14 +217,16 @@ strong {
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  margin-bottom: 4rem;
 }
 .about-section1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 2rem 0rem;
 }
 .about-section1 img {
-  width: 40%;
+  width: 45%;
 }
 #main-pictureone {
   padding-left: 5rem;
@@ -224,15 +234,45 @@ strong {
 #main-pictureonetwo {
   padding-right: 5rem;
 }
+#section-about-page {
+  margin-bottom: 2rem 0rem;
+  padding-bottom: 3rem;
+}
 
 .about-content {
-  padding: 2rem;
+  /* padding: 2rem; */
   color: --var(--text-color);
   justify-content: center;
+  font-size: large;
 }
 .about-content p {
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
+/* add the media adjustment for the mobile device */
+@media screen and (max-width: 760px) {
+  html {
+    font-size: 14px;
+  }
+  .about-section1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-section1 img {
+    width: 100%;
+  }
+  #main-pictureone {
+    padding-left: 0rem;
+  }
+  #main-pictureonetwo {
+    padding-right: 0rem;
+  }
+  /* to avoid the confustion, change the order of the picture, so the structure would be 
+  content -image of those two parts of main sections */
+  #section2 {
+    flex-direction: column-reverse;
+  }
+}
+
 /* css for the form */
 input,
 label {
