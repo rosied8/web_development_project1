@@ -138,20 +138,6 @@ footer {
 .choice p {
   color: var(--white);
 }
-@media screen and (max-width: 760px) {
-  html {
-    font-size: 14px;
-  }
-  .coffee-choices {
-    flex-direction: column;
-    align-items: center;
-  }
-  .choice {
-    margin-bottom: 25px;
-    width: 60%;
-    padding: 40px;
-  }
-}
 @media screen and (max-width: 400px) {
   .choice {
     width: 100%;
@@ -211,6 +197,26 @@ section p {
   margin-bottom: 2rem;
   font-size: large;
 }
+@media screen and (max-width: 760px) {
+  html {
+    font-size: 14px;
+  }
+  .coffee-choices {
+    flex-direction: column;
+    align-items: center;
+  }
+  .choice {
+    margin-bottom: 25px;
+    width: 60%;
+    padding: 40px;
+  }
+  .open-detail {
+    flex-direction: column;
+  }
+  .intro {
+    width: 100%;
+  }
+}
 
 /* for the about page */
 .about-section {
@@ -267,7 +273,7 @@ section p {
     padding-right: 0rem;
   }
   /* to avoid the confustion, change the order of the picture, so the structure would be 
-  content -image of those two parts of main sections */
+  content -image of those two parts of main sections  */
   #section2 {
     flex-direction: column-reverse;
   }
