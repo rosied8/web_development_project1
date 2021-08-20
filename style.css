@@ -306,3 +306,45 @@ contact-map {
   margin: auto;
   width: 90%;
 }
+/* form style */
+.model {
+  display: none;
+  border: olive solid 2rem;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  /* -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s; */
+}
+#modelimg {
+  width: 3rem;
+}
+.modelheader {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  /* justify-content: center; */
+}
+.modelbody {
+  padding: 1rem;
+  width: 80%;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
