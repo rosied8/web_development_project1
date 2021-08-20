@@ -11,6 +11,9 @@
     <title>Contact</title>
 </head>
 <body>
+    <!-- <div class=hidden>
+
+    </div> -->
     <header>
         <div class="nav-bar">
             <!-- if treat the element as background image, there is no 
@@ -28,40 +31,6 @@
         <img  id="header-lmg"src="Assets\logo_dark.png" alt="Mr Coffee's logo,a flat black man wearing top hat">
     </header>
     <main>
-        <form>
-            <div>
-                <label for="surname">Nom*</label>
-                 <!-- name attribute is used to specify the 
-                the value of input on console -->
-                <input id="surname" type="text" placeholder="Surname"  name="surname" required> 
-            </div>
-            <div>
-                <label for="firstname">Prénom*</label>
-                 <!-- name attribute is used to specify the 
-                the value of input on console -->
-                <input id="firstname" type="text" placeholder="First name"  name="firstname" required> 
-            </div>
-            <div>
-                <label for="email">Email*</label>
-                <!-- name attribute is used to specify the 
-                the value of input on console -->
-                <input id="email" type="email" placeholder="Email" name="email" required> 
-            </div>
-            <div>
-                <label for="phone">Phone</label>
-                <!-- name attribute is used to specify the 
-                the value of input on console -->
-                <input id="phone" type="tel" placeholder="Phone number" name="phone" required> 
-            </div>
-            <div>
-                <p>Message *</p>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px;"></textarea>
-            </div>
-            <div>
-                <button type="submit">Submit</button>
-            </div>
-            <!-- regular expression, the + sign means unlimited, the ^ means start, the $ means ends  -->
-        </form>
         <div id="myModel" class="model">
             <div class="modelheader">
                 <img id="modelimg" src="Assets/logo_dark.png" alt="log of Mr.Coffee">
@@ -82,6 +51,40 @@
             </div>
         </div>
         <div class="contact-page">
+            <form novalidate>
+                <div>
+                    <label for="surname">Nom*</label>
+                     <!-- name attribute is used to specify the 
+                    the value of input on console -->
+                    <input id="surname" type="text" placeholder="Surname"  name="surname" required> 
+                </div>
+                <div>
+                    <label for="firstname">Prénom*</label>
+                     <!-- name attribute is used to specify the 
+                    the value of input on console -->
+                    <input id="firstname" type="text" placeholder="First name"  name="firstname" required> 
+                </div>
+                <div>
+                    <label for="email">Email*</label>
+                    <!-- name attribute is used to specify the 
+                    the value of input on console -->
+                    <input id="email" type="email" placeholder="Email" name="email" required> 
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <!-- name attribute is used to specify the 
+                    the value of input on console -->
+                    <input id="phone" type="tel" placeholder="Phone number" name="phone" required> 
+                </div>
+                <div>
+                    <p>Message *</p>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px;"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+                <!-- regular expression, the + sign means unlimited, the ^ means start, the $ means ends  -->
+            </form>
             <h1 class="contact-title">On vous attend !</h1>
             <div class="contact-detail">
                 <p>

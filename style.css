@@ -282,7 +282,16 @@ section p {
 /* css for the form */
 input,
 label {
+  width: 100%;
   display: block;
+  height: 2rem;
+}
+input,
+textarea {
+  background-color: var(--secondary-color);
+}
+textarea {
+  width: 100%;
 }
 /* The contact page style */
 .contact-page {
@@ -309,15 +318,32 @@ contact-map {
 /* form style */
 .model {
   display: none;
+  /* display: flex;
   border: olive solid 2rem;
-  width: 100%;
-  height: 100%;
+  width: 75vw;
+  height: 50vh;
   justify-content: center;
   text-align: center;
+  /* let the navigate  bar fixed the top */
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  min-height: 50vh;
+  overflow: scroll;
+  /* pointer-events: all; */
+
   /* -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s; */
+}
+.model > * {
+  margin: 20px 0;
 }
 #modelimg {
   width: 3rem;
@@ -325,8 +351,8 @@ contact-map {
 .modelheader {
   display: flex;
   flex-direction: row;
-  margin-left: 2rem;
-  /* justify-content: center; */
+  /* margin-left: 2rem; */
+  justify-content: center;
 }
 .modelbody {
   padding: 1rem;
@@ -348,3 +374,9 @@ contact-map {
     opacity: 1;
   }
 }
+/* body.model-active {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* pointer-events: none; 
+} */
