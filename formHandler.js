@@ -9,6 +9,9 @@ const msg=document.querySelector("#subject");
 const form=document.querySelector("form");
 const phone=document.querySelector("#phone");
 const modelButton=document.querySelector(".modelbutton");
+const overlay=document.querySelector(".overlay");
+const hidden=document.querySelector(".hidden");
+const body=document.querySelector("body");
 // regular expression
 let validEmail=/^[A-Za-z0-9\._\-]+@[$A-Za-z0-9\-]+\.[$A-Za-z0-9\-]+$/
 const validName=/^[A-Za-zÀ-ÖØ-öø-ÿ0-9 \.'\-]+$/;
@@ -33,6 +36,7 @@ function sumbitForm(event){
         )
         console.log(model);
         model.style.display="block"
+        openModel();
 
     }else{
         console.log("The input is invalid");
@@ -48,6 +52,20 @@ function isEmpty(input){
 }
 modelButton.onclick=function(){
     model.style.display="none";
+    closeModel();
+}
+
+function openModel(){
+    body.classList.add("model-active");
+    overlay.classList.remove("hidden");
+    model.classList.remove("hidden");
+    // document.querySelector(".overlay").style.display="block";
+}
+
+function closeModel(){
+    body.classList.remove("model-active");
+    overlay.classList.add("hidden");
+    model.classList.add("hidden");
 }
 
 

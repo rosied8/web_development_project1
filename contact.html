@@ -12,8 +12,10 @@
 </head>
 <body>
     <!-- <div class=hidden>
-
     </div> -->
+    <div class="hidden overlay">
+
+    </div>
     <header>
         <div class="nav-bar">
             <!-- if treat the element as background image, there is no 
@@ -31,26 +33,30 @@
         <img  id="header-lmg"src="Assets\logo_dark.png" alt="Mr Coffee's logo,a flat black man wearing top hat">
     </header>
     <main>
-        <div id="myModel" class="model">
+        <div id="myModel" class="hidden model">
             <div class="modelheader">
                 <img id="modelimg" src="Assets/logo_dark.png" alt="log of Mr.Coffee">
-                <p>
-                    MERCI<br>
-                </p>
-                <p>
-                    Votre message a bien été envoyé !
-                </p>
+                <div class="modelheadertext">
+                    <p>
+                        MERCI
+                    </p>
+                    <p>
+                        Votre message a bien été envoyé !
+                    </p>
+                </div>
             </div>
             <div class="modelbody">
                 <p>
                     Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee
                 </p>
             </div>
-            <div class="modelbutton">
+            <button class="modelbutton">FERMER</button>
+            <!-- <div class="modelbutton">
                 <button>FERMER</button>
-            </div>
+            </div> -->
         </div>
         <div class="contact-page">
+            <h1 class="formtitle">Dite nous tout</h1>
             <form novalidate>
                 <div>
                     <label for="surname">Nom*</label>
@@ -80,9 +86,7 @@
                     <p>Message *</p>
                     <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px;"></textarea>
                 </div>
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
+                <button type="submit" class="formbutton">ENYOYER</button>
                 <!-- regular expression, the + sign means unlimited, the ^ means start, the $ means ends  -->
             </form>
             <h1 class="contact-title">On vous attend !</h1>

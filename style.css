@@ -300,6 +300,9 @@ textarea {
   margin: 3rem 3rem;
   flex-direction: column;
 }
+.formtitle {
+  text-align: center;
+}
 .contact-title {
   text-align: center;
 }
@@ -316,31 +319,29 @@ contact-map {
   width: 90%;
 }
 /* form style */
-.model {
+#myModel {
   display: none;
-  /* display: flex;
-  border: olive solid 2rem;
-  width: 75vw;
+  display: flex;
+  width: 75vh;
   height: 50vh;
-  justify-content: center;
-  text-align: center;
-  /* let the navigate  bar fixed the top */
   position: fixed;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 5px 5px;
-  padding: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+  /* padding: 20px; */
   background: white;
+  text-align: center;
   border-radius: 15px;
-  min-height: 50vh;
+  min-height: 45vh;
   overflow: scroll;
+  /* margin: auto; */
   /* pointer-events: all; */
-
-  /* -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s; */
 }
 .model > * {
   margin: 20px 0;
@@ -353,10 +354,49 @@ contact-map {
   flex-direction: row;
   /* margin-left: 2rem; */
   justify-content: center;
+  justify-content: left;
+}
+.modelheader > * {
+  margin-left: 2rem;
+  text-align: center;
+}
+.modelheadertext {
+  /* margin: 2rem 1rem; */
+  font-weight: bold;
+  font-size: larger;
+}
+.modelheadertext > p {
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  text-align: center;
+}
+.formbutton {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.modelbutton {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem 1rem;
 }
 .modelbody {
-  padding: 1rem;
-  width: 80%;
+  font-weight: bold;
+  padding: 0rem 3rem;
+  width: 90%;
+  line-height: 23pt;
+  text-align: left;
+  /* padding: 1rem;
+  width: 80%; */
 }
 @-webkit-keyframes fadeIn {
   from {
@@ -373,6 +413,20 @@ contact-map {
   to {
     opacity: 1;
   }
+}
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.hidden {
+  display: none;
 }
 /* body.model-active {
   width: 100vw;
